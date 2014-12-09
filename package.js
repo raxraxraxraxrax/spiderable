@@ -1,10 +1,13 @@
 Package.describe({
+  name: "raxraxraxraxrax:spiderable",
   summary: "Makes the application crawlable to web spiders",
   version: "0.1.0",
   git: 'https://github.com/raxraxraxraxrax/spiderable.git'
 });
 
 Package.on_use(function (api) {
+  // because the product I'm developing for is still on 0.9...
+  api.versionsFrom('METEOR@0.9.0');
   api.use('webapp', 'server');
   api.use(['templating'], 'client');
   api.use(['underscore'], ['client', 'server']);
